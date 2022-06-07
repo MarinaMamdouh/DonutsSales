@@ -17,11 +17,11 @@ struct Sales:Identifiable{
 extension Sales{
     static func donuts()-> [Sales]{
         return [
-            Sales(name: "Cream Boston", sales: 900),
-            Sales(name: "Original Donut", sales: 1432),
-            Sales(name: "Caramel Donut", sales: 376),
-            Sales(name: "Chocolate Donut", sales: 897),
-            Sales(name: "Strawbery Donut", sales: 145)
+            Sales(name: "CreamBoston", sales: 900),
+            Sales(name: "Original", sales: 1432),
+            Sales(name: "Caramel", sales: 376),
+            Sales(name: "Chocolate", sales: 897),
+            Sales(name: "Strawbery", sales: 145)
         ]
     }
 }
