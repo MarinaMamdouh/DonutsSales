@@ -14,6 +14,8 @@
 		F8D80411284FD5C9004F4A73 /* Sales.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D80410284FD5C9004F4A73 /* Sales.swift */; };
 		F8D80413284FD6D0004F4A73 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D80412284FD6D0004F4A73 /* Menu.swift */; };
 		F8D80415284FDDA1004F4A73 /* SalesChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D80414284FDDA1004F4A73 /* SalesChartView.swift */; };
+		F8D80417284FE656004F4A73 /* SalesSummaryChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D80416284FE656004F4A73 /* SalesSummaryChartView.swift */; };
+		F8D80419284FE67A004F4A73 /* SalesSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D80418284FE67A004F4A73 /* SalesSummary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		F8D80410284FD5C9004F4A73 /* Sales.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sales.swift; sourceTree = "<group>"; };
 		F8D80412284FD6D0004F4A73 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		F8D80414284FDDA1004F4A73 /* SalesChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesChartView.swift; sourceTree = "<group>"; };
+		F8D80416284FE656004F4A73 /* SalesSummaryChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesSummaryChartView.swift; sourceTree = "<group>"; };
+		F8D80418284FE67A004F4A73 /* SalesSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesSummary.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +62,11 @@
 			isa = PBXGroup;
 			children = (
 				F8D80410284FD5C9004F4A73 /* Sales.swift */,
+				F8D80418284FE67A004F4A73 /* SalesSummary.swift */,
 				F8D80402284FD539004F4A73 /* DonutsSalesApp.swift */,
 				F8D80404284FD539004F4A73 /* ContentView.swift */,
 				F8D80414284FDDA1004F4A73 /* SalesChartView.swift */,
+				F8D80416284FE656004F4A73 /* SalesSummaryChartView.swift */,
 				F8D80406284FD539004F4A73 /* Assets.xcassets */,
 				F8D80408284FD539004F4A73 /* Preview Content */,
 				F8D80412284FD6D0004F4A73 /* Menu.swift */,
@@ -149,6 +155,8 @@
 				F8D80405284FD539004F4A73 /* ContentView.swift in Sources */,
 				F8D80415284FDDA1004F4A73 /* SalesChartView.swift in Sources */,
 				F8D80403284FD539004F4A73 /* DonutsSalesApp.swift in Sources */,
+				F8D80417284FE656004F4A73 /* SalesSummaryChartView.swift in Sources */,
+				F8D80419284FE67A004F4A73 /* SalesSummary.swift in Sources */,
 				F8D80413284FD6D0004F4A73 /* Menu.swift in Sources */,
 				F8D80411284FD5C9004F4A73 /* Sales.swift in Sources */,
 			);

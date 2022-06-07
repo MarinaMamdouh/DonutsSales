@@ -9,7 +9,7 @@ import Foundation
 
 struct Sales:Identifiable{
     var id = UUID()
-    var name:String
+    var month:String
     var sales:Int
 }
 
@@ -17,22 +17,22 @@ struct Sales:Identifiable{
 extension Sales{
     static func donuts()-> [Sales]{
         return [
-            Sales(name: "CreamBoston", sales: 900),
-            Sales(name: "Original", sales: 1432),
-            Sales(name: "Caramel", sales: 376),
-            Sales(name: "Chocolate", sales: 897),
-            Sales(name: "Strawbery", sales: 145)
+            Sales(month: "Jan.", sales: 900),
+            Sales(month: "Feb.", sales: 1432),
+            Sales(month: "Mar.", sales: 376),
+            Sales(month: "Apr.", sales: 897),
+            Sales(month: "May", sales: 145)
         ]
     }
 }
 
 extension Sales{
     static func coffee()-> [Sales]{
-        return [Sales(name: "Cappcinuo", sales: 1324),
-                Sales(name: "Latte", sales: 898),
-                Sales(name: "Flat White", sales: 567),
-                Sales(name: "Americano", sales: 2908),
-                Sales(name: "Machiato", sales: 389)
+        return [Sales(month: "Jan.", sales: 1324),
+                Sales(month: "Feb.", sales: 898),
+                Sales(month: "Mar.", sales: 567),
+                Sales(month: "Apr.", sales: 2908),
+                Sales(month: "May", sales: 389)
         ]
     }
 }

@@ -10,7 +10,11 @@ import Charts
 
 struct ContentView: View {
     @State var menuItem:Menu = .Donuts
+    @State var showBar:Bool = true
     @State var showBoth:Bool = false
+    var style:ChartStyle {
+        return (showBar ? ChartStyle.Bar : ChartStyle.Line)
+    }
     
     var data:[Sales] {
         switch menuItem {
@@ -24,26 +28,48 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             
-            VStack {
+            VStack(spacing: 20) {
                 
                 PickerView("Item", selection: $menuItem)
                 
-                SalesChartView(data: data)
+                SalesChartView(data: data, style: style)
                 
-                ButtonView(showBoth ? "show Bar chart" : "Show line chart")
+                ButtonView(showBar ? "Show Line Chart" : "Show Bar Chart")
+                
+                ToggleView("Show All In One Chart", isOn: $showBoth)
+                
+                SummaryChartView( SalesSummary.summary(), style: style ,isShown: showBoth)
 
                 Spacer()
             }
-            .navigationTitle("Sales")
+               .navigationTitle("Sales")
         }
+    }
+    
+    func SummaryChartView(_ data:[SalesSummary], style:ChartStyle, isShown:Bool)-> some View{
+        SalesSummaryChartView(data: data, style: style)
+            .opacity(isShown ? 1 : 0)
+    }
+    
+    func ToggleView(_ title:String, isOn:Binding<Bool>)-> some View{
+        Toggle(title, isOn: $showBoth)
+            .padding(20)
     }
     
     func ButtonView(_ text:String)-> some View{
         Button {
-            showBoth.toggle()
+            withAnimation {
+                showBar.toggle()
+            }
+ 
         } label: {
             Text(text)
+                .foregroundColor(.black)
         }
+        .padding(10)
+        .background( Color.init(uiColor: UIColor.systemMint) )
+        .cornerRadius(5)
+        
     }
     
     func PickerView(_ name:String, selection:Binding<Menu>)-> some View{

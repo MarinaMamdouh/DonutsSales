@@ -6,8 +6,10 @@
 //
 
 import Foundation
+import Charts
 
-enum Menu {
+enum Menu{
+    
     case Donuts
     case Coffee
 }
